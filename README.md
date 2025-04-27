@@ -6,7 +6,7 @@ In this project, we will execute an End-To-End Data Engineering Project on Real-
 We are going to use different technologies such as Python, Amazon Web Services (AWS), Apache Kafka, Glue, Athena, and SQL.
 
 ## Architecture 
-![image](https://github.com/user-attachments/assets/bce75315-3e6e-42b8-b176-7bcd02f8ca0f)
+![image](https://github.com/nowmaan-mohammad/stock-market-kafka-data-engineering-project/blob/main/Architecture.jpg)
 
 
 ## Technology Used
@@ -21,5 +21,5 @@ We are going to use different technologies such as Python, Amazon Web Services (
 
 
 ## Dataset Used
-Here is the dataset used - https://github.com/darshilparmar/stock-market-kafka-data-engineering-project/blob/main/indexProcessed.csv
+Here is the dataset used - https://github.com/nowmaan-mohammad/stock-market-kafka-data-engineering-project/blob/main/indexProcessed.csv
 
