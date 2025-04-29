@@ -16,3 +16,33 @@ Start Zoo-keeper:
 -------------------------------
 cd kafka_2.13-3.8.1/
 bin/zookeeper-server-start.sh config/zookeeper.properties
+
+Open another window to start kafka
+But first ssh to to your ec2 machine as done above
+
+
+Start Kafka-server:
+----------------------------------------
+Duplicate the session & enter in a new console --
+export KAFKA_HEAP_OPTS="-Xmx256M -Xms128M" to allocate more memory
+cd kafka_2.13-3.8.1/
+bin/kafka-server-start.sh config/server.properties
+
+It is pointing to private server , change server.properties so that it can run in public IP
+
+Private IP DNS name (IPv4 only)
+ip-172-31-95-177.ec2.internal
+
+Public IPv4 address
+3.83.105.239
+
+To do this,
+Do a "sudo nano config/server.properties" - change ADVERTISED_LISTENERS to public ip of the EC2 instance
+
+
+Uncomment the below line add public IP to it:
+advertised.listeners=PLAINTEXT://your-host-name:9092
+advertised.listeners=PLAINTEXT://3.83.105.239:9092
+
+
+You have to change security group (i.e firewall rules) , add inbound rule to allow your PC to connect to EC2 machine
