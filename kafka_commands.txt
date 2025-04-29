@@ -1,0 +1,12 @@
+ssh -i "kafka-stock-market-key.pem" ec2-user@ec2-3-83-105-239.compute-1.amazonaws.com
+
+
+wget https://downloads.apache.org/kafka/3.8.1/kafka_2.13-3.8.1.tgz
+ls
+tar xvf kafka_2.13-3.8.1.tgz
+
+
+kafka runs on JVM:
+
+sudo yum install java-17-amazon-corretto
+java -version
